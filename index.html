@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR-code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: rgb(215, 227, 235);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .qr-code {
+        background-color: hsl(0, 0%, 100%);
+        display: grid;
+        grid-row: 1fr 1fr;
+        border-radius: 5%;
+        box-shadow: 1px 1px 5px rgb(177, 175, 175);
+        padding: 30px;
+      }
+      .qr-image {
+        border-radius: 5%;
+      }
+
+      .header {
+        font-family: roboto;
+        font-size: 45px;
+        font-weight: bolder;
+        text-align: center;
+        display: inline-block;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 0;
+        color: hsl(218, 44%, 22%);
+        text-shadow: 1px 1px 1px;
+      }
+      .describe {
+        font-family: roboto;
+        font-weight: 400;
+        text-align: center;
+        font-size: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 50px;
+        color: hsl(216, 15%, 48%);
+      }
+      .container {
+        display: inline-block;
+        width: 580px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="qr-code">
+      <div class="container">
+        <div class="qr-icon">
+          <img class="qr-image" src="images/image-qr-code.png" alt="" />
+        </div>
+        <p class="header">Improve your front-end skills by building projects</p>
+        <p class="describe">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
